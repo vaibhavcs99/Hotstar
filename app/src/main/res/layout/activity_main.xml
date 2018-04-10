@@ -1,195 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rl"
+    android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.rupalisonawane.hotstar.MainActivity">
 
-
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#7cc13a"
+            app:logo="@drawable/logo"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true">
 
 
-            <ImageView
-                android:layout_width="399dp"
-                android:layout_height="224dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:src="@drawable/vp" />
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv11"
-                    android:layout_width="340dp"
-                    android:layout_height="22dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Top Picks For You"
-                    android:textColor="#222"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MORE"
-                    android:textStyle="bold"
-                    android:textSize="12sp"
-                    android:textColor="#558B2F"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_alignParentEnd="true"
-                    />
 
-            </RelativeLayout>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="172dp"
-                    android:layout_marginBottom="12dp"
-                    android:layout_marginTop="12dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tp1" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tp2" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tp3" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tp4" />
-
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="340dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="12dp"
-                    android:text="Popular TV Shows"
-                    android:textColor="#222"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MORE"
-                    android:textStyle="bold"
-                    android:textSize="12sp"
-                    android:textColor="#558B2F"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_alignParentEnd="true"
-                    />
-
-            </RelativeLayout>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <LinearLayout
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/vp" />
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tv1" />
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="340dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Top Picks For You"
+                        android:textColor="#222"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tv2" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tv3" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tv4" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/tv5" />
-
-                    <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="172dp"
-                        android:layout_marginBottom="12dp"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginEnd="12dp"
+                        android:layout_marginTop="12dp"
+                        android:text="MORE"
+                        android:textColor="#558B2F"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="172dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp1" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp2" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp3" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp6" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp7" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tp4" />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="340dp"
+                        android:layout_height="22dp"
                         android:layout_marginStart="12dp"
-                        android:src="@drawable/tv6" />
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-    </ScrollView>
+                        android:text="Popular TV Shows"
+                        android:textColor="#222"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitEnd"
-        android:src="@drawable/bv" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="12dp"
+                        android:text="MORE"
+                        android:textColor="#558B2F"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
-</RelativeLayout>
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv1" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv2" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv3" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv4" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv5" />
+
+                        <ImageView
+                            android:layout_width="129dp"
+                            android:layout_height="172dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/tv6" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/bv" />
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view"/>
+
+</android.support.v4.widget.DrawerLayout>
